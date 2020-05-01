@@ -1,0 +1,130 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "rocket elevators",
+      "intents": [
+        {
+          "name": "GetLaunchIntent",
+          "slots": [],
+          "samples": [
+            "hi",
+            "hello"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetStatusIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "Elevator {id} status",
+            "what is the status of elevator {id}",
+            "Can you tell me the status of elevator {id}"
+          ]
+        },
+        {
+          "name": "GetRemoteDataIntent",
+          "slots": [],
+          "samples": [
+            "tell me about the company",
+            "a briefing please",
+            "what is the rocket elevators situation",
+            "what is the current situation at rocket elevators",
+            "how rocket elevators is going",
+            "what happen at rocket elevators",
+            "what is going on"
+          ]
+        },
+        {
+          "name": "GetElevatorSnIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "what is the serial number of elevator {id}",
+            "what is the SN of elevator {id}",
+            "can you tell me the serial number of elevator {id}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ChangeStatusIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "status",
+              "type": "Status"
+            }
+          ],
+          "samples": [
+            "change elevator {id} status to {status}",
+            "change status to {status} for elevator {id}"
+          ]
+        },
+        {
+          "name": "GetElevatorInformationIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "give me some information about elevator {id}",
+            "what happen with the elevator {id}",
+            "can you tell me some information about elevator {id}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Pending"
+              }
+            },
+            {
+              "name": {
+                "value": "InProgress"
+              }
+            },
+            {
+              "name": {
+                "value": "Completed"
+              }
+            }
+          ],
+          "name": "Status"
+        }
+      ]
+    }
+  },
+  "version": "15"
+}
