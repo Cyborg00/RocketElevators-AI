@@ -1,0 +1,35 @@
+Alexa Skill Kit with JS
+the invocation is:
+
+rocket elevators
+
+GetStatusIntent
+
+Elevator 9 status
+what is the status of elevator 9
+Can you tell me the status of elevator 9
+
+GetRemoteDataIntent
+
+tell me about the company
+a briefing please
+what is the rocket elevators situation
+what is the current situation at rocket elevators
+how rocket elevators is going
+
+GetElevatorSnIntent
+
+what is the serial number of elevator 9
+what is the SN of elevator 9
+can you tell me the serial number of elevator 9
+
+GetElevatorInformationIntent
+
+give me some information about elevator 9
+what happen with the elevator 9
+can you tell me some information about elevator 9
+
+ChangeStatusIntent
+
+change elevator 9 status to inactive
+change status to inactive for elevator 9
